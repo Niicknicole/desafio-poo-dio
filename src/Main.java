@@ -57,6 +57,20 @@ public class Main {
         System.out.println("Conteúdos Inscritos João:" + devJoao.getConteudosInscritos());
         System.out.println("Conteúdos Concluidos João:" + devJoao.getConteudosConcluidos());
         System.out.println("XP:" + devJoao.calcularTotalXp());
+          
+        System.out.println("===== INFORMAÇÕES DO BOOTCAMP =====");
+        System.out.println("Nome: " + bootcamp.getNome());
+        System.out.println("Descrição: " + bootcamp.getDescricao());
+        System.out.println("Data de início: " + bootcamp.getDataInicial());
+        System.out.println("Data de término: " + bootcamp.getDataFinal());
+        System.out.println("====================================");
+
+        System.out.println("\nConteúdos disponíveis no Bootcamp:");
+          for (var conteudo : bootcamp.getConteudos()) {
+         System.out.println("- " + conteudo.getTitulo());
+        }
+
+
 
     }
 
